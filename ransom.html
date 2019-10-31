@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
+   
+
 	<title>Ransom</title>
 	<style type="text/css">
 		span {
@@ -9,20 +10,34 @@
 		span.secret:hover {
 			color:purple;
 		}
+    span.second {
+      color:lightblue;
+      font-size: 20px; 
+    }
+    span.hint {
+      color:lightblue;
+      font-size: 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      
+    }
+	
 	</style>
 
 	<script type="text/javascript">
 		function check() {
 			el = document.getElementsByTagName('input');
-			if(el[0].value == "piglet") {
+			if(el[0].value === "below look") {
 				alert("you got it!");
 			} else {
-				alert("nope");
+				alert("nhgfhgfhgfope");
 			}
 		}
 	</script>
 </head>
 <body>
+ 
   <span>P</span>
   <span>A</span>
   <span>P</span>
@@ -58,13 +73,11 @@
   <span class="secret">W</span>
   <span>!</span>
   <span>!</span>
-
-  <span> </span>
-  <span> </span>  
-  <span> </span>
-  <span> </span>
-  <span>AND FLIP</span>
-  <span>!</span>
+  
+ 
+  <span class="second">
+  and flip!gfhfjfgf
+  </span>
 
   
 
@@ -72,6 +85,19 @@
   <hr>
   <label>What's the secret answer?</label>
   <input type="text" name="answer">
-  <button onclick="check()">yes?</button >
+  <button onclick=check()>yes?</button >
 </body>
+
+
+
+<footer> 
+
+<span class="hint">
+
+**Can you find the code wihtin the sentance?**
+
+</span> 
+</footer>
+
 </html>
+\
